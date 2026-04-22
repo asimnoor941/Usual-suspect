@@ -170,7 +170,7 @@ nav {
   max-width: 340px;
 }
 .hero-photo img {
-  width: 100%; aspect-ratio: 1/1; object-fit: cover;
+  width: 100%; height: 340px; object-fit: cover; display: block;
   box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 8px var(--cream);
 }
 .hero-photo-label {
@@ -194,7 +194,7 @@ nav {
 }
 
 @media (max-width: 900px) {
-  .hero { padding: 130px 0 60px; }
+  .hero { padding: 110px 0 40px; min-height: auto; }
   .hero-headline { grid-column: 1 / 13; }
   .hero-photo { grid-column: 1 / 13; margin-top: 40px; transform: rotate(-1.5deg); max-width: 340px; }
   .hero-tag { grid-column: 1 / 13; margin-top: 60px; }
@@ -277,10 +277,11 @@ nav {
   display: flex; gap: 48px; padding: 48px 32px 64px;
   overflow-x: auto; scroll-snap-type: x mandatory; cursor: grab;
   scrollbar-width: none;
+  align-items: flex-start;
 }
 .wall-track::-webkit-scrollbar { display: none; }
 .polaroid {
-  flex: 0 0 auto; width: 260px;
+  flex: 0 0 260px;
   background: var(--cream); padding: 14px 14px 48px;
   box-shadow: 0 24px 60px rgba(0,0,0,0.6);
   scroll-snap-align: center; position: relative; transition: .3s;
@@ -289,7 +290,7 @@ nav {
 .polaroid:nth-child(odd) { transform: rotate(-2deg); }
 .polaroid:nth-child(even) { transform: rotate(2.5deg); }
 .polaroid:nth-child(3n) { transform: rotate(-1deg); }
-.polaroid img { aspect-ratio: 4/3; width: 100%; object-fit: cover; }
+.polaroid img { width: 100%; height: 180px; object-fit: cover; display: block; }
 .polaroid .cap {
   position: absolute; bottom: 16px; left: 16px; right: 16px;
   font-family: 'Caveat', cursive; font-weight: 600; color: var(--ink);
@@ -327,7 +328,7 @@ nav {
 
 .menu-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 28px; }
 .dish-card { position: relative; }
-.dish-card img { width: 100%; aspect-ratio: 3/2; object-fit: cover; }
+.dish-card img { width: 100%; height: 260px; object-fit: cover; display: block; }
 .dish-card .price {
   position: absolute; top: 18px; right: 18px;
   background: var(--pink); color: #000; padding: 10px 16px;
@@ -373,7 +374,7 @@ nav {
 .door-grid { display: grid; grid-template-columns: 7fr 5fr; min-height: 420px; }
 @media (max-width: 900px) { .door-grid { grid-template-columns: 1fr; min-height: 0; } }
 .door-img { position: relative; overflow: hidden; }
-.door-img img { width: 100%; height: 100%; min-height: 340px; max-height: 520px; object-fit: cover; }
+.door-img img { width: 100%; height: 480px; object-fit: cover; display: block; }
 .door-body {
   background: var(--ink); padding: 80px 48px;
   display: flex; flex-direction: column; justify-content: center;
@@ -468,7 +469,7 @@ nav {
 @media (max-width: 900px) { .private-grid { grid-template-columns: 1fr; gap: 48px; } }
 .private-img { position: relative; }
 .private-img img {
-  width: 100%; aspect-ratio: 4/3; object-fit: cover;
+  width: 100%; height: 380px; object-fit: cover; display: block;
   border: 8px solid var(--cream);
   box-shadow: 0 30px 80px rgba(0,0,0,0.7); transform: rotate(-1.5deg);
 }
@@ -605,7 +606,7 @@ footer {
 .popup-close:hover { background: var(--pink); color: #fff; }
 
 .popup-image {
-  width: 100%; aspect-ratio: 16/10; object-fit: cover;
+  width: 100%; height: 200px; object-fit: cover;
   display: block;
 }
 .popup-body { padding: 28px 28px 32px; text-align: center; }
@@ -640,6 +641,17 @@ footer {
 
 .reveal { opacity: 0; transform: translateY(24px); transition: .9s ease; }
 .reveal.in { opacity: 1; transform: none; }
+
+/* ── MOBILE IMAGE HEIGHT CAPS (explicit px heights = works on every browser) ── */
+@media (max-width: 768px) {
+  .hero-photo img { height: 280px; }
+  .polaroid { flex: 0 0 220px; }
+  .polaroid img { height: 160px; }
+  .dish-card img { height: 220px; }
+  .private-img img { height: 260px; }
+  .door-img img { height: 300px; }
+  .popup-image { height: 160px; }
+}
 
 /* ── REDUCED MOTION ── */
 @media (prefers-reduced-motion: reduce) {
