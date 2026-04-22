@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /images/
+Allow: /images/hero.jpg
+Allow: /images/logo.jpg
+
+Sitemap: https://usualsuspectsnj.com/sitemap.xml
