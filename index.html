@@ -285,8 +285,16 @@
     </div>
     <div class="menu-cta">
       <a href="https://www.ubereats.com/" class="btn btn-pink" target="_blank" rel="noopener noreferrer">Order Uber Eats</a>
-      <a href="#" class="btn btn-wine">Full Menu</a>
+      <button class="btn btn-wine" id="fullMenuToggle" aria-expanded="false" aria-controls="fullMenuPanel">Full Menu</button>
     </div>
+
+    <!-- ═══ FULL MENU PANEL ═══ -->
+    <div id="fullMenuPanel" class="full-menu" hidden>
+      <img src="images/menu-page-1.jpg" alt="The Usual Suspects food menu" width="2800" height="4328" loading="lazy" style="width:100%;height:auto;display:block;margin-bottom:24px;">
+      <img src="images/menu-page-2.jpg" alt="The Usual Suspects drinks menu" width="2800" height="4328" loading="lazy" style="width:100%;height:auto;display:block;">
+    </div>
+    <!-- ═══ END FULL MENU PANEL ═══ -->
+
   </div>
 </section>
 
@@ -424,5 +432,20 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+  const menuToggle = document.getElementById('fullMenuToggle');
+  const menuPanel = document.getElementById('fullMenuPanel');
+  if (menuToggle && menuPanel) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = !menuPanel.hidden;
+      menuPanel.hidden = isOpen;
+      menuToggle.setAttribute('aria-expanded', !isOpen);
+      menuToggle.textContent = isOpen ? 'Full Menu' : 'Close Menu';
+      if (!isOpen) {
+        menuPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
+</script>
 </body>
 </html>

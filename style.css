@@ -660,3 +660,8 @@ footer {
   .reveal { opacity: 1; transform: none; transition: none; }
   html { scroll-behavior: auto; }
 }
+
+/* ── FULL MENU PANEL ── */
+.full-menu { margin-top: 60px; padding-top: 60px; border-top: 1px solid rgba(233,30,140,0.2); animation: menuFadeIn 0.4s ease; }
+.full-menu[hidden] { display: none; }
+@keyframes menuFadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
