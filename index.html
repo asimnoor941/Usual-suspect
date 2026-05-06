@@ -392,16 +392,16 @@
        add class "disabled" to the <div class="popup-overlay"> below.
      To change the content: just edit the text, image, and link.
      ═══════════════════════════════════════════════════════════════ -->
-<div class="popup-overlay disabled" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="popupTitle" aria-hidden="true">
+<div class="popup-overlay" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="popupTitle" aria-hidden="true">
   <div class="popup-card">
     <button class="popup-close" id="popupClose" aria-label="Close popup">×</button>
     <img src="images/heart-cake.jpg" alt="" class="popup-image">
     <div class="popup-body">
-      <div class="popup-eyebrow">This month only</div>
-      <h2 id="popupTitle" class="popup-title">Galentine's<br>Weekend</h2>
-      <p class="popup-desc">Heart-shaped cakes. Pink cocktails. The private room is yours. Book for four or more and the first round is on us.</p>
-      <a href="mailto:usualsuspectnj@gmail.com?subject=Galentine's%20Booking" class="btn btn-pink popup-cta">Reserve The Room</a>
-      <div class="popup-meta">Feb 13–15 · Thompson St · Raritan</div>
+      <div class="popup-eyebrow">Now Open</div>
+      <h2 id="popupTitle" class="popup-title">Tiki Bar<br>&amp; Patio</h2>
+      <p class="popup-desc">The patio is officially open for lunch and dinner. Tiki drinks. Fresh air. Full menu. Come sit outside.</p>
+      <a href="#menu" class="btn btn-pink popup-cta" onclick="document.getElementById('popupOverlay').classList.add('disabled')">See The Menu</a>
+      <div class="popup-meta">Open daily · 46 Thompson St · Raritan</div>
     </div>
   </div>
 </div>
