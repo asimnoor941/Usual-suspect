@@ -665,3 +665,43 @@ footer {
 .full-menu { margin-top: 60px; padding-top: 60px; border-top: 1px solid rgba(233,30,140,0.2); animation: menuFadeIn 0.4s ease; }
 .full-menu[hidden] { display: none; }
 @keyframes menuFadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── CURSOR GLOW ── */
+.cursor-glow {
+  position: fixed;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(233,30,140,0.13) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  will-change: left, top;
+}
+@media (hover: none) { .cursor-glow { display: none; } }
+
+/* ── TYPEWRITER CURSOR ── */
+.tw-cursor {
+  display: inline;
+  color: var(--pink);
+  animation: tw-blink .65s step-end infinite;
+}
+@keyframes tw-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ── DISH CARD HOVER ZOOM ── */
+.dish-card { overflow: hidden; }
+.dish-card img { transition: transform .55s ease; }
+.dish-card:hover img { transform: scale(1.08); }
+.dish-card .info { transition: transform .4s ease; }
+.dish-card:hover .info { transform: translateY(-5px); }
+
+/* ── MAGNETIC BUTTONS — spring-back transition ── */
+.btn {
+  position: relative; overflow: hidden;
+  transition: background-color .25s, color .25s, border-color .25s,
+              box-shadow .25s, transform .4s cubic-bezier(.25,.46,.45,.94);
+}
+
