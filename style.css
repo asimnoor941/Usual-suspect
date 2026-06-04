@@ -747,8 +747,10 @@ footer {
   background: var(--ink);
   border-radius: 12px;
   overflow: hidden;
-  max-width: 900px;
+  max-width: 700px;
   width: 90vw;
+  max-height: 85vh;
+  overflow-y: auto;
   box-shadow: 0 0 40px rgba(233,30,140,0.3);
 }
 .popup-duo-inner {
