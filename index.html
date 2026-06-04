@@ -420,15 +420,24 @@
 <!-- ═══════════════════════════════════════════════════════════════
      MONTHLY POPUP — EDIT THIS BLOCK TO CHANGE THE POP-UP
      ─────────────────────────────────────────────────────────────
-     This shows once per browser session, 1 second after page loads.
-     To disable the popup entirely for a month with no event:
-       add class "disabled" to the <div class="popup-overlay"> below.
-     To change the content: just edit the text, image, and link.
      ═══════════════════════════════════════════════════════════════ -->
 <div class="popup-overlay" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="popupTitle" aria-hidden="true">
-  <div class="popup-card" style="padding:0;overflow:hidden;">
+  <div class="popup-duo">
     <button class="popup-close" id="popupClose" aria-label="Close popup">&times;</button>
-    <img src="images/adult-happy-meal.jpeg" alt="Adult Happy Meal — $30 per person, includes Spicy Situation Pasta, Small Fries, Caesar Salad, plus your choice of drink" style="width:100%;height:auto;display:block;">
+    <div class="popup-duo-inner">
+      <div class="popup-duo-card">
+        <img src="images/adult-happy-meal.jpeg" alt="Adult Happy Meal — $30 per person" style="width:100%;height:auto;display:block;border-radius:8px;">
+      </div>
+      <div class="popup-duo-card">
+        <div class="popup-body" style="text-align:center;padding:40px 24px;">
+          <div class="popup-eyebrow">Now Open</div>
+          <h2 id="popupTitle" class="popup-title">Tiki Bar<br>&amp; Patio</h2>
+          <p class="popup-desc">The patio is officially open for lunch and dinner. Tiki drinks. Fresh air. Full menu. Come sit outside.</p>
+          <a href="#menu" class="btn btn-pink popup-cta" onclick="document.getElementById('popupOverlay').classList.add('disabled')">See The Menu</a>
+          <div class="popup-meta">46 Thompson St · Raritan · Closed Mondays</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <!-- END MONTHLY POPUP ═══════════════════════════════════════════ -->
