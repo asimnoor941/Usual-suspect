@@ -1394,3 +1394,9 @@ footer {
 .door-actions .btn-wine { border-color: rgba(245,233,213,0.5); }
 .door-actions .btn-wine:hover { color: var(--cream); border-color: var(--cream); }
 
+
+/* ── PHONE FIX: the 3-D wheel must not widen the page ──
+   The dishes rolling off the sides of the wheel were counted as page width,
+   which made phones zoom the whole site out. Clip them at the section edge. */
+.menu { overflow: hidden; }
+@supports (overflow: clip) { html { overflow-x: clip; } }
