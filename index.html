@@ -17,18 +17,22 @@
 <meta name="theme-color" content="#0A0508">
 
 <!-- PRIMARY SEO -->
-<title>The Usual Suspects · Bar & Patio · Raritan NJ · Late Kitchen · Private Room</title>
-<meta name="description" content="The Usual Suspects, a Raritan NJ bar at 46 Thompson St. Tiki bar patio, Vogue-magazine ceiling, hot-pink private room, late-night kitchen. Smash burgers, vodka rigatoni, beef qebapa. Karaoke Wednesdays · Espresso Martini Fridays.">
-<meta name="keywords" content="Raritan bar, Raritan NJ restaurant, bar Raritan New Jersey, Thompson Street Raritan, patio bar Raritan NJ, tiki bar New Jersey, private dining Somerset County, karaoke Raritan, espresso martini Raritan NJ, smash burger Raritan, wings Raritan NJ, late night bar NJ, bar with patio Raritan">
+<title>The Usual Suspects | Bar, Kitchen &amp; Karaoke in Raritan, NJ</title>
+<meta name="description" content="Bar and kitchen at 46 Thompson St, Raritan NJ. All-day happy hour, smash burgers, karaoke Wednesdays, live acoustic Saturdays, NFL Sundays, private parties.">
 <meta name="author" content="The Usual Suspects">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://usualsuspectsnj.com/">
+<meta name="geo.region" content="US-NJ">
+<meta name="geo.placename" content="Raritan">
+<meta name="geo.position" content="40.5695;-74.6335">
+<meta name="ICBM" content="40.5695, -74.6335">
+<link rel="alternate" type="text/plain" href="https://usualsuspectsnj.com/llms.txt" title="Plain-text summary for AI assistants">
 
 <!-- OPEN GRAPH (FACEBOOK / LINKEDIN / INSTAGRAM) -->
-<meta property="og:type" content="website">
+<meta property="og:type" content="restaurant">
 <meta property="og:site_name" content="The Usual Suspects">
-<meta property="og:title" content="The Usual Suspects · Bar & Patio · Raritan NJ">
-<meta property="og:description" content="Tiki bar patio. Vogue-magazine ceiling. Hot-pink private room. Late-night kitchen. Karaoke Wednesdays · Espresso Martini Fridays · 46 Thompson St, Raritan NJ.">
+<meta property="og:title" content="The Usual Suspects | Bar &amp; Kitchen in Raritan, NJ">
+<meta property="og:description" content="Bar and kitchen at 46 Thompson St, Raritan NJ. All-day happy hour, smash burgers, karaoke Wednesdays, live acoustic Saturdays, NFL Sundays, private parties.">
 <meta property="og:url" content="https://usualsuspectsnj.com/">
 <meta property="og:image" content="https://usualsuspectsnj.com/images/hero.jpg">
 <meta property="og:image:width" content="1344">
@@ -38,8 +42,8 @@
 
 <!-- TWITTER / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Usual Suspects · Bar & Patio · Raritan NJ">
-<meta name="twitter:description" content="Tiki bar patio. Vogue-magazine ceiling. Hot-pink private room. Late-night kitchen. Raritan NJ.">
+<meta name="twitter:title" content="The Usual Suspects | Bar &amp; Kitchen in Raritan, NJ">
+<meta name="twitter:description" content="Bar and kitchen in Raritan NJ. All-day happy hour, karaoke Wednesdays, live acoustic Saturdays, NFL Sundays, private parties.">
 <meta name="twitter:image" content="https://usualsuspectsnj.com/images/hero.jpg">
 <meta name="twitter:image:alt" content="The Usual Suspects bar interior Raritan NJ">
 
@@ -57,59 +61,538 @@
 <link rel="preload" as="image" href="images/xmas-old-fashioned.jpg" fetchpriority="high">
 
 <!-- STYLES -->
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 
-<!-- LOCAL BUSINESS STRUCTURED DATA (for Google Business / rich results) -->
-<script type="application/ld+json">
+<!-- STRUCTURED DATA for Google and AI assistants: business details, full food menu, FAQ.
+     If hours, prices or FAQ answers change on the page, change them here too. -->
+<script type="application/ld+json" id="ldMain">
 {
-  "@context": "https://schema.org",
-  "@type": ["Restaurant", "BarOrPub"],
-  "name": "The Usual Suspects",
-  "image": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": [
+    "Restaurant",
+    "BarOrPub"
+   ],
+   "@id": "https://usualsuspectsnj.com/#business",
+   "name": "The Usual Suspects",
+   "alternateName": [
+    "Usual Suspects Bar & Kitchen",
+    "The Usual Suspects Raritan"
+   ],
+   "description": "Bar and kitchen in Raritan, New Jersey, serving modern American food with Italian and Albanian favorites, cocktails and an all-day happy hour. Karaoke on Wednesdays, live acoustic music on Saturdays, NFL on Sundays, a patio with a tiki bar, and a room for private parties.",
+   "url": "https://usualsuspectsnj.com/",
+   "logo": "https://usualsuspectsnj.com/images/logo.jpg",
+   "image": [
     "https://usualsuspectsnj.com/images/hero.jpg",
     "https://usualsuspectsnj.com/images/private-room.jpg",
     "https://usualsuspectsnj.com/images/patio-main.jpg",
     "https://usualsuspectsnj.com/images/vogue-ceiling.jpg",
-    "https://usualsuspectsnj.com/images/rose-wall.jpg"
-  ],
-  "url": "https://usualsuspectsnj.com/",
-  "telephone": "+1-908-382-8613",
-  "email": "usualsuspectnj@gmail.com",
-  "priceRange": "$$",
-  "servesCuisine": ["American", "Italian", "Albanian", "Bar Food"],
-  "acceptsReservations": "True",
-  "hasMenu": "https://usualsuspectsnj.com/#menu",
-  "address": {
+    "https://usualsuspectsnj.com/images/rose-wall.jpg",
+    "https://usualsuspectsnj.com/images/front-door.jpg"
+   ],
+   "telephone": "+1-908-382-8613",
+   "email": "usualsuspectnj@gmail.com",
+   "priceRange": "$$",
+   "currenciesAccepted": "USD",
+   "servesCuisine": [
+    "American",
+    "Italian",
+    "Albanian",
+    "Bar Food"
+   ],
+   "acceptsReservations": true,
+   "address": {
     "@type": "PostalAddress",
     "streetAddress": "46 Thompson Street",
     "addressLocality": "Raritan",
     "addressRegion": "NJ",
     "postalCode": "08869",
     "addressCountry": "US"
-  },
-  "geo": {
+   },
+   "geo": {
     "@type": "GeoCoordinates",
     "latitude": 40.5695,
     "longitude": -74.6335
-  },
-  "openingHoursSpecification": [
-    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "12:00", "closes": "22:00"},
-    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "12:00", "closes": "00:00"},
-    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "20:00"}
-  ],
-  "amenityFeature": [
-    {"@type": "LocationFeatureSpecification", "name": "Outdoor Seating", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Tiki Bar", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Private Room", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Karaoke", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Full Bar", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Late Night Kitchen", "value": true}
-  ],
-  "sameAs": [
+   },
+   "hasMap": "https://maps.google.com/?q=46+Thompson+St+Raritan+NJ",
+   "areaServed": [
+    "Raritan NJ",
+    "Somerville NJ",
+    "Bridgewater NJ",
+    "Somerset County NJ"
+   ],
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+     ],
+     "opens": "12:00",
+     "closes": "22:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Friday",
+      "Saturday"
+     ],
+     "opens": "12:00",
+     "closes": "23:59"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "Sunday",
+     "opens": "12:00",
+     "closes": "20:00"
+    }
+   ],
+   "amenityFeature": [
+    {
+     "@type": "LocationFeatureSpecification",
+     "name": "Outdoor Seating",
+     "value": true
+    },
+    {
+     "@type": "LocationFeatureSpecification",
+     "name": "Tiki Bar",
+     "value": true
+    },
+    {
+     "@type": "LocationFeatureSpecification",
+     "name": "Private Events",
+     "value": true
+    },
+    {
+     "@type": "LocationFeatureSpecification",
+     "name": "Karaoke",
+     "value": true
+    },
+    {
+     "@type": "LocationFeatureSpecification",
+     "name": "Live Music",
+     "value": true
+    },
+    {
+     "@type": "LocationFeatureSpecification",
+     "name": "Sports on TV",
+     "value": true
+    },
+    {
+     "@type": "LocationFeatureSpecification",
+     "name": "Full Bar",
+     "value": true
+    },
+    {
+     "@type": "LocationFeatureSpecification",
+     "name": "Happy Hour",
+     "value": true
+    },
+    {
+     "@type": "LocationFeatureSpecification",
+     "name": "Delivery via Uber Eats",
+     "value": true
+    }
+   ],
+   "hasMenu": {
+    "@type": "Menu",
+    "@id": "https://usualsuspectsnj.com/#menu",
+    "name": "Food menu",
+    "url": "https://usualsuspectsnj.com/#menu",
+    "hasMenuSection": [
+     {
+      "@type": "MenuSection",
+      "name": "Appetizers",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Caesar Salad",
+        "offers": {
+         "@type": "Offer",
+         "price": "13.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Crisp hearts of romaine with shaved parmesan cheese, garlic and croutons, served with classic caesar dressing."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Mixed Greens Salad",
+        "offers": {
+         "@type": "Offer",
+         "price": "14.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Apples, glazed walnuts, crumbled gorgonzola and cranberries."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Long Hots",
+        "offers": {
+         "@type": "Offer",
+         "price": "10.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Charred, with roasted garlic and extra virgin olive oil."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "House-Made Rice Balls",
+        "offers": {
+         "@type": "Offer",
+         "price": "15.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Panko crusted risotto stuffed with melty mozzarella cheese in a silky blush pink sauce."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Oven Roasted Meatballs",
+        "offers": {
+         "@type": "Offer",
+         "price": "10.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Three hand rolled, slow simmered meatballs in a light brown gravy."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Hot Mess Wings",
+        "offers": {
+         "@type": "Offer",
+         "price": "12.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Crispy and flavorful, tossed in a vibrant, tangy sauce."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Stick It & Dip It",
+        "offers": {
+         "@type": "Offer",
+         "price": "14.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Breaded mozzarella sticks: crunchy, stretchy and seriously cheesy."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Bavarian Pretzel",
+        "offers": {
+         "@type": "Offer",
+         "price": "10.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Straight out the oven, served with creamy melted cheese."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Soup of the Week",
+        "offers": {
+         "@type": "Offer",
+         "price": "6.00",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "The Catch",
+        "offers": {
+         "@type": "Offer",
+         "price": "15.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Crusted coconut shrimp with an island golden homemade sauce."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Disco Fries",
+        "offers": {
+         "@type": "Offer",
+         "price": "12.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Served classic style with savory brown gravy, velvety rich cheese and frizzled onions."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Fried Calamari",
+        "offers": {
+         "@type": "Offer",
+         "price": "18.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Tossed in a house made dressing, your choice of sweet and spicy or traditional."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Loaded Nachos",
+        "offers": {
+         "@type": "Offer",
+         "price": "16.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Choice of beef or chicken, with pico de gallo, beans, guac, sour cream and long hots."
+       }
+      ]
+     },
+     {
+      "@type": "MenuSection",
+      "name": "Handhelds",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Back Room Chicken Melt",
+        "offers": {
+         "@type": "Offer",
+         "price": "14.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Flame grilled chicken and a trio of cheeses pressed in a warm tortilla."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Chicken Sliders",
+        "offers": {
+         "@type": "Offer",
+         "price": "13.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Three sliders with American cheese and house sauce."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Nonna's Meatball Sub",
+        "offers": {
+         "@type": "Offer",
+         "price": "18.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Hand rolled meatballs with slow simmered marinara, melted mozzarella and charred Italian long hots. Served with fries or a salad."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "The \"OG\"",
+        "offers": {
+         "@type": "Offer",
+         "price": "18.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Crispy chicken breast, fire roasted red pepper, mozzarella and sweet balsamic glaze on oven warmed giambotta bread. Served with fries or a salad."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "The Festival",
+        "offers": {
+         "@type": "Offer",
+         "price": "18.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Sweet Italian sausage, roasted bell peppers, onions and roasted garlic on warm bread. Served with fries or a salad."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Raritan Smash Burger",
+        "offers": {
+         "@type": "Offer",
+         "price": "17.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Custom blend beef patty with yellow American cheese, lettuce, tomato, onion and a pickle. Served with fries or a salad."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Tacos",
+        "offers": {
+         "@type": "Offer",
+         "price": "16.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Three tacos with your choice of chicken, beef or cod."
+       }
+      ]
+     },
+     {
+      "@type": "MenuSection",
+      "name": "Entrées",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Spicy Situation",
+        "offers": {
+         "@type": "Offer",
+         "price": "24.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Rigatoni in a velvety blush vodka sauce with a slight kick."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "The Holy Parm",
+        "offers": {
+         "@type": "Offer",
+         "price": "25.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Chicken in Italian breadcrumbs with melted mozzarella and your choice of creamy vodka sauce or traditional marinara."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Uncle Lou's Giambotta",
+        "offers": {
+         "@type": "Offer",
+         "price": "29.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Sweet Italian sausage, slow roasted meatballs, red peppers, onions, mushrooms, charred long hots and golden roasted potatoes."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Beef Qebapa",
+        "offers": {
+         "@type": "Offer",
+         "price": "23.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Albanian house crafted beef links with your choice of fries or salad."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Fettucini Bolognese",
+        "offers": {
+         "@type": "Offer",
+         "price": "25.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Fettuccine tossed in a rich, savory bolognese sauce."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Butternut Squash Ravioli",
+        "offers": {
+         "@type": "Offer",
+         "price": "19.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Hazelnut light cream sauce with chopped walnuts."
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Atlantic Grilled Salmon",
+        "offers": {
+         "@type": "Offer",
+         "price": "28.00",
+         "priceCurrency": "USD"
+        },
+        "description": "Glazed in honey garlic sauce with roasted red potatoes and garden vegetables."
+       }
+      ]
+     }
+    ]
+   },
+   "sameAs": [
     "https://www.instagram.com/usualsuspectsnj",
-    "https://www.facebook.com/profile.php?id=61585498981542",
-    "https://www.tiktok.com/@usualsuspectsnj"
-  ]
+    "https://www.facebook.com/profile.php?id=61583762337493"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://usualsuspectsnj.com/#website",
+   "url": "https://usualsuspectsnj.com/",
+   "name": "The Usual Suspects",
+   "publisher": {
+    "@id": "https://usualsuspectsnj.com/#business"
+   },
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://usualsuspectsnj.com/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Where is The Usual Suspects?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The Usual Suspects Bar & Kitchen is at 46 Thompson Street, Raritan, NJ 08869, in Somerset County. Look for the pink neon sign."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What are the opening hours?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We are open Tuesday to Thursday noon to 10 PM, Friday and Saturday noon to midnight, Sunday noon to 8 PM. Closed Mondays. The kitchen serves until 10 PM, and until 8 PM on Sundays."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there a happy hour?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Happy hour runs from open to close. $5 gets you select drafts, Surfside, High Noon, Spiked Ade or house liquors. $7 gets you Skyy vodka, Cazadores tequila, Bacardí rum, Four Roses bourbon or Dewar’s scotch."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is on each night of the week?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Wednesdays are Karaoke Wednesdays with DJ Melly Mel from 8 PM, with no cover. Thursdays are Single Ladies night with half off pours from 8 PM. Fridays are Espresso Martini Night. Saturdays are Live Acoustic Night from 8 to 11 PM. Sundays we show the NFL games with the volume up."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I book a Christmas party, birthday or private event?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We reserve a section of the house for your party, any day we are open. The room has 20 bar seats, 40 high-top seats and 16 low-top seats. Email usualsuspectnj@gmail.com or call (908) 382-8613 to book."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What kind of food do you serve?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Modern American bar food with Italian and Albanian favorites. Popular dishes include the Raritan Smash Burger ($17), Spicy Situation rigatoni in vodka sauce ($24), The Holy Parm chicken parm ($25), Beef Qebapa Albanian beef links ($23), Hot Mess Wings and Fried Calamari."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you take reservations?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Call (908) 382-8613 to book a table. For parties of 8 or more, email usualsuspectnj@gmail.com."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there outdoor seating?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. There is a patio with a tiki bar, string lights and TVs."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you deliver?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, you can order from The Usual Suspects on Uber Eats."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there live music or karaoke in Raritan, NJ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The Usual Suspects has karaoke every Wednesday from 8 PM and a live acoustic night every Saturday from 8 to 11 PM."
+     }
+    }
+   ]
+  }
+ ]
 }
 </script>
 
@@ -168,6 +651,7 @@
         <span class="row1">USUAL</span>
         <span class="row2">SUSPECTS</span>
         <span class="row3">after hours, on Thompson</span>
+        <span class="sr-only">Bar and Kitchen in Raritan, New Jersey</span>
       </h1>
       <div class="hero-photo">
         <!-- CHRISTMAS HERO PHOTO. After the holidays switch back to:
@@ -406,7 +890,7 @@
 
       <article class="dish-card s4 reveal">
         <!--<span class="price">$15</span>-->
-        <img src="images/calamari.jpg?v=2" alt="Crispy calamari on romaine lettuce with mango chutney and balsamic drizzle" width="900" height="900" loading="lazy">
+        <img src="images/calamari.jpg?v=2" alt="Beef qebapa: Albanian beef links on a board with salad, feta and flatbread" width="900" height="900" loading="lazy">
         <div class="info">
           <div class="n">Beef Qebapa</div>
           <div class="d">Albanian beef links · greek salad · golden fries</div>
@@ -441,6 +925,55 @@
     <div id="fullMenuPanel" class="full-menu" hidden>
       <img src="images/menu-page-1.jpg?v=2" alt="The Usual Suspects food menu: appetizers, handhelds and entrées" width="1298" height="2048" loading="lazy" style="width:100%;height:auto;display:block;margin-bottom:24px;">
       <img src="images/menu-page-2.jpg?v=2" alt="The Usual Suspects drinks menu: happy hour, spirits, beer and wines" width="1298" height="2048" loading="lazy" style="width:100%;height:auto;display:block;">
+      <!-- TEXT MENU: the same menu as the two images above, as real text, so Google, AI assistants
+           and screen readers can read it. Keep it in step with the menu images and the structured data. -->
+      <details class="menu-text">
+        <summary>Read the menu as text</summary>
+        <h4>Appetizers</h4>
+        <dl>
+          <dt>Caesar Salad <span>$13</span></dt><dd>Crisp hearts of romaine with shaved parmesan cheese, garlic and croutons, served with classic caesar dressing.</dd>
+          <dt>Mixed Greens Salad <span>$14</span></dt><dd>Apples, glazed walnuts, crumbled gorgonzola and cranberries.</dd>
+          <dt>Long Hots <span>$10</span></dt><dd>Charred, with roasted garlic and extra virgin olive oil.</dd>
+          <dt>House-Made Rice Balls <span>$15</span></dt><dd>Panko crusted risotto stuffed with melty mozzarella cheese in a silky blush pink sauce.</dd>
+          <dt>Oven Roasted Meatballs <span>$10</span></dt><dd>Three hand rolled, slow simmered meatballs in a light brown gravy.</dd>
+          <dt>Hot Mess Wings <span>$12 / 19</span></dt><dd>Crispy and flavorful, tossed in a vibrant, tangy sauce.</dd>
+          <dt>Stick It &amp; Dip It <span>$14</span></dt><dd>Breaded mozzarella sticks: crunchy, stretchy and seriously cheesy.</dd>
+          <dt>Bavarian Pretzel <span>$10</span></dt><dd>Straight out the oven, served with creamy melted cheese.</dd>
+          <dt>Soup of the Week <span>$6</span></dt><dd></dd>
+          <dt>The Catch <span>$15</span></dt><dd>Crusted coconut shrimp with an island golden homemade sauce.</dd>
+          <dt>Disco Fries <span>$12</span></dt><dd>Served classic style with savory brown gravy, velvety rich cheese and frizzled onions.</dd>
+          <dt>Fried Calamari <span>$18</span></dt><dd>Tossed in a house made dressing, your choice of sweet and spicy or traditional.</dd>
+          <dt>Loaded Nachos <span>$16</span></dt><dd>Choice of beef or chicken, with pico de gallo, beans, guac, sour cream and long hots.</dd>
+        </dl>
+        <h4>Handhelds</h4>
+        <dl>
+          <dt>Back Room Chicken Melt <span>$14</span></dt><dd>Flame grilled chicken and a trio of cheeses pressed in a warm tortilla.</dd>
+          <dt>Chicken Sliders <span>$13</span></dt><dd>Three sliders with American cheese and house sauce.</dd>
+          <dt>Nonna's Meatball Sub <span>$18</span></dt><dd>Hand rolled meatballs with slow simmered marinara, melted mozzarella and charred Italian long hots. Served with fries or a salad.</dd>
+          <dt>The "OG" <span>$18</span></dt><dd>Crispy chicken breast, fire roasted red pepper, mozzarella and sweet balsamic glaze on oven warmed giambotta bread. Served with fries or a salad.</dd>
+          <dt>The Festival <span>$18</span></dt><dd>Sweet Italian sausage, roasted bell peppers, onions and roasted garlic on warm bread. Served with fries or a salad.</dd>
+          <dt>Raritan Smash Burger <span>$17</span></dt><dd>Custom blend beef patty with yellow American cheese, lettuce, tomato, onion and a pickle. Served with fries or a salad.</dd>
+          <dt>Tacos <span>$16</span></dt><dd>Three tacos with your choice of chicken, beef or cod.</dd>
+        </dl>
+        <h4>Entrées</h4>
+        <dl>
+          <dt>Spicy Situation <span>$24</span></dt><dd>Rigatoni in a velvety blush vodka sauce with a slight kick.</dd>
+          <dt>The Holy Parm <span>$25</span></dt><dd>Chicken in Italian breadcrumbs with melted mozzarella and your choice of creamy vodka sauce or traditional marinara.</dd>
+          <dt>Uncle Lou's Giambotta <span>$29</span></dt><dd>Sweet Italian sausage, slow roasted meatballs, red peppers, onions, mushrooms, charred long hots and golden roasted potatoes.</dd>
+          <dt>Beef Qebapa <span>$23</span></dt><dd>Albanian house crafted beef links with your choice of fries or salad.</dd>
+          <dt>Fettucini Bolognese <span>$25</span></dt><dd>Fettuccine tossed in a rich, savory bolognese sauce.</dd>
+          <dt>Butternut Squash Ravioli <span>$19</span></dt><dd>Hazelnut light cream sauce with chopped walnuts.</dd>
+          <dt>Atlantic Grilled Salmon <span>$28</span></dt><dd>Glazed in honey garlic sauce with roasted red potatoes and garden vegetables.</dd>
+        </dl>
+        <h4>Happy hour, open to close</h4>
+        <dl>
+          <dt>$5</dt><dd>Select drafts, Surfside, High Noon, Spiked Ade and house liquors.</dd>
+          <dt>$7</dt><dd>Skyy vodka, Cazadores tequila, Bacardí rum, Four Roses bourbon and Dewar’s scotch.</dd>
+        </dl>
+        <h4>Beer &amp; wine</h4>
+        <p>Domestic beers are $5 (Bud, Bud Light, Coors Light, Michelob Ultra, Miller Lite, Sam Adams, Yuengling). Imports are $6 (Corona, Heineken, Heineken 0.0, Modelo, Stella Artois).</p>
+        <p>Wine by the glass from $9 and by the bottle from $34: cabernet sauvignon, pinot noir, chardonnay, sauvignon blanc, pinot grigio and rosé.</p>
+      </details>
     </div>
     <!-- ═══ END FULL MENU PANEL ═══ -->
 
@@ -555,6 +1088,56 @@
   </div>
 </section>
 
+<!-- ========== FAQ ========== -->
+<!-- FAQ: plain questions and answers. These are what Google and AI assistants quote.
+     If you change an answer here, change the same answer in the structured data in <head>. -->
+<section id="faq" class="faq" aria-labelledby="faqHeading">
+  <div class="faq-inner">
+    <span class="scrawl" aria-hidden="true">good to know</span>
+    <h2 id="faqHeading">Questions, <em>answered.</em></h2>
+    <details class="faq-item" open>
+      <summary>Where is The Usual Suspects?</summary>
+      <p>The Usual Suspects Bar &amp; Kitchen is at 46 Thompson Street, Raritan, NJ 08869, in Somerset County. Look for the pink neon sign.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What are the opening hours?</summary>
+      <p>We are open Tuesday to Thursday noon to 10 PM, Friday and Saturday noon to midnight, Sunday noon to 8 PM. Closed Mondays. The kitchen serves until 10 PM, and until 8 PM on Sundays.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is there a happy hour?</summary>
+      <p>Yes. Happy hour runs from open to close. $5 gets you select drafts, Surfside, High Noon, Spiked Ade or house liquors. $7 gets you Skyy vodka, Cazadores tequila, Bacardí rum, Four Roses bourbon or Dewar’s scotch.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What is on each night of the week?</summary>
+      <p>Wednesdays are Karaoke Wednesdays with DJ Melly Mel from 8 PM, with no cover. Thursdays are Single Ladies night with half off pours from 8 PM. Fridays are Espresso Martini Night. Saturdays are Live Acoustic Night from 8 to 11 PM. Sundays we show the NFL games with the volume up.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I book a Christmas party, birthday or private event?</summary>
+      <p>Yes. We reserve a section of the house for your party, any day we are open. The room has 20 bar seats, 40 high-top seats and 16 low-top seats. Email usualsuspectnj@gmail.com or call (908) 382-8613 to book.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What kind of food do you serve?</summary>
+      <p>Modern American bar food with Italian and Albanian favorites. Popular dishes include the Raritan Smash Burger ($17), Spicy Situation rigatoni in vodka sauce ($24), The Holy Parm chicken parm ($25), Beef Qebapa Albanian beef links ($23), Hot Mess Wings and Fried Calamari.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Do you take reservations?</summary>
+      <p>Yes. Call (908) 382-8613 to book a table. For parties of 8 or more, email usualsuspectnj@gmail.com.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is there outdoor seating?</summary>
+      <p>Yes. There is a patio with a tiki bar, string lights and TVs.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Do you deliver?</summary>
+      <p>Yes, you can order from The Usual Suspects on Uber Eats.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is there live music or karaoke in Raritan, NJ?</summary>
+      <p>Yes. The Usual Suspects has karaoke every Wednesday from 8 PM and a live acoustic night every Saturday from 8 to 11 PM.</p>
+    </details>
+  </div>
+</section>
+
 </main>
 
 <!-- ═══════════════════════════════════════════════════════════════
@@ -611,6 +1194,7 @@
   <!-- HOURS -->
   <div class="foot-hours">  Tue–Thu 12–10 · Fri–Sat 12–12 · Sun 12–8 · Closed Mondays · Kitchen open daily 12–10 (Sunday till 8 PM)</div>
   <div class="foot-links">
+    <a href="#faq">FAQ</a>
     <a href="https://instagram.com/usualsuspectsnj" target="_blank" rel="noopener noreferrer">Instagram</a>
     <a href="https://www.facebook.com/profile.php?id=61583762337493" target="_blank" rel="noopener noreferrer">Facebook</a>
     <!--<a href="https://tiktok.com/@usualsuspectsnj" target="_blank" rel="noopener noreferrer">TikTok</a> -->
@@ -622,7 +1206,7 @@
   <div class="foot-meta">© 2026 The Usual Suspects · Raritan, NJ · All rights reserved</div>
 </footer>
 
-<script src="script.js?v=3"></script>
+<script src="script.js?v=4"></script>
 <script>
   const menuToggle = document.getElementById('fullMenuToggle');
   const menuPanel = document.getElementById('fullMenuPanel');

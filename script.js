@@ -959,3 +959,48 @@
   update();
   setInterval(update, 60000);
 })();
+
+/* ---- SEO · UPCOMING EVENTS FOR GOOGLE AND AI ASSISTANTS ----
+   Search engines only understand events that have real dates. This writes
+   the next four weeks of each weekly night into the page as structured
+   data, so the dates never go stale. EDIT THE WEEKLY NIGHTS HERE. */
+(function () {
+  var NIGHTS = [
+    // day (0 = Sunday), name, start, end, description
+    [3, 'Karaoke Wednesdays', '20:00', '', 'Karaoke with DJ Melly Mel every Wednesday from 8 PM. No cover. Kitchen open till 10.'],
+    [4, 'Single Ladies Night', '20:00', '', 'Half off pours from 8 PM every Thursday.'],
+    [5, 'Espresso Martini Night', '', '', 'Espresso martinis, cocktails and music every Friday.'],
+    [6, 'Live Acoustic Night', '20:00', '23:00', 'Live acoustic music every Saturday from 8 to 11 PM.'],
+    [0, 'NFL Sundays', '', '', 'Every NFL game on the screens with the volume up, every Sunday.']
+  ];
+  var place = {
+    '@type': 'BarOrPub', '@id': 'https://usualsuspectsnj.com/#business', name: 'The Usual Suspects',
+    address: { '@type': 'PostalAddress', streetAddress: '46 Thompson Street', addressLocality: 'Raritan',
+               addressRegion: 'NJ', postalCode: '08869', addressCountry: 'US' }
+  };
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  var today = new Date(), events = [];
+  for (var d = 0; d < 28; d++) {
+    var day = new Date(today.getFullYear(), today.getMonth(), today.getDate() + d);
+    NIGHTS.forEach(function (n) {
+      if (day.getDay() !== n[0]) return;
+      var date = day.getFullYear() + '-' + pad(day.getMonth() + 1) + '-' + pad(day.getDate());
+      var ev = {
+        '@type': 'Event', name: n[1] + ' at The Usual Suspects', description: n[4],
+        startDate: n[2] ? date + 'T' + n[2] : date,
+        eventStatus: 'https://schema.org/EventScheduled',
+        eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+        location: place, organizer: { '@id': 'https://usualsuspectsnj.com/#business' },
+        image: 'https://usualsuspectsnj.com/images/' + (n[0] === 6 ? 'acoustic-night.jpg' : 'hero.jpg'),
+        url: 'https://usualsuspectsnj.com/#events'
+      };
+      if (n[3]) ev.endDate = date + 'T' + n[3];
+      events.push(ev);
+    });
+  }
+  var tag = document.createElement('script');
+  tag.type = 'application/ld+json';
+  tag.id = 'ldEvents';
+  tag.textContent = JSON.stringify({ '@context': 'https://schema.org', '@graph': events });
+  document.head.appendChild(tag);
+})();

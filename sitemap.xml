@@ -3,48 +3,76 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://usualsuspectsnj.com/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://usualsuspectsnj.com/images/hero.jpg</image:loc>
-      <image:title>The Usual Suspects bar interior: Raritan NJ</image:title>
+      <image:title>The Usual Suspects bar interior, Raritan NJ</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://usualsuspectsnj.com/images/private-room.jpg</image:loc>
-      <image:title>Guest with espresso martini in the private room at The Usual Suspects Raritan NJ</image:title>
+      <image:loc>https://usualsuspectsnj.com/images/front-door.jpg</image:loc>
+      <image:title>Front door and pink neon sign at The Usual Suspects, 46 Thompson Street, Raritan NJ</image:title>
     </image:image>
     <image:image>
       <image:loc>https://usualsuspectsnj.com/images/patio-main.jpg</image:loc>
-      <image:title>The Usual Suspects tiki bar patio with string lights: Raritan NJ</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://usualsuspectsnj.com/images/exterior.jpg</image:loc>
-      <image:title>Lamborghini outside The Usual Suspects: 46 Thompson Street Raritan NJ</image:title>
+      <image:title>Patio and tiki bar with string lights at The Usual Suspects, Raritan NJ</image:title>
     </image:image>
     <image:image>
       <image:loc>https://usualsuspectsnj.com/images/vogue-ceiling.jpg</image:loc>
-      <image:title>Vogue magazine ceiling at The Usual Suspects bar Raritan NJ</image:title>
+      <image:title>Vogue magazine ceiling at The Usual Suspects bar, Raritan NJ</image:title>
     </image:image>
     <image:image>
       <image:loc>https://usualsuspectsnj.com/images/rose-wall.jpg</image:loc>
-      <image:title>Pink neon rose wall inside The Usual Suspects: Raritan NJ bar</image:title>
+      <image:title>Pink neon rose wall inside The Usual Suspects, Raritan NJ</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://usualsuspectsnj.com/images/rigatoni-new.jpg</image:loc>
-      <image:title>Spicy Situation: rigatoni alla vodka at The Usual Suspects Raritan NJ</image:title>
+      <image:loc>https://usualsuspectsnj.com/images/new-bar-crowd-1.jpg</image:loc>
+      <image:title>A full house at The Usual Suspects bar, Raritan NJ</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://usualsuspectsnj.com/images/burger-spread.jpg</image:loc>
+      <image:loc>https://usualsuspectsnj.com/images/vodka-rigatoni.jpg</image:loc>
+      <image:title>Spicy Situation: rigatoni in blush vodka sauce at The Usual Suspects</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://usualsuspectsnj.com/images/chicken-parm.jpg</image:loc>
+      <image:title>The Holy Parm: chicken parm at The Usual Suspects, Raritan NJ</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://usualsuspectsnj.com/images/burger.jpg</image:loc>
       <image:title>Raritan Smash Burger at The Usual Suspects</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://usualsuspectsnj.com/images/beef-qebapa.jpg</image:loc>
-      <image:title>Beef Qebapa: Albanian beef links with Greek salad at The Usual Suspects</image:title>
+      <image:loc>https://usualsuspectsnj.com/images/calamari.jpg</image:loc>
+      <image:title>Beef Qebapa: Albanian beef links at The Usual Suspects, Raritan NJ</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://usualsuspectsnj.com/images/espresso-martini.jpg</image:loc>
-      <image:title>Espresso Martini Fridays at The Usual Suspects Raritan NJ bar</image:title>
+      <image:loc>https://usualsuspectsnj.com/images/new-ravioli.jpg</image:loc>
+      <image:title>Butternut Squash Ravioli at The Usual Suspects, Raritan NJ</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://usualsuspectsnj.com/images/xmas-tacos.jpg</image:loc>
+      <image:title>Tacos at The Usual Suspects, Raritan NJ</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://usualsuspectsnj.com/images/xmas-old-fashioned.jpg</image:loc>
+      <image:title>PB&amp;J Old-Fashioned cocktail at The Usual Suspects, Raritan NJ</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://usualsuspectsnj.com/images/drink-espresso-martini.jpg</image:loc>
+      <image:title>Espresso martinis at The Usual Suspects, Raritan NJ</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://usualsuspectsnj.com/images/acoustic-night.jpg</image:loc>
+      <image:title>Live Acoustic Night, Saturdays 8 to 11, at The Usual Suspects, Raritan NJ</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://usualsuspectsnj.com/images/menu-page-1.jpg</image:loc>
+      <image:title>The Usual Suspects food menu: appetizers, handhelds and entrees</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://usualsuspectsnj.com/images/menu-page-2.jpg</image:loc>
+      <image:title>The Usual Suspects drinks menu: happy hour, spirits, beer and wine</image:title>
     </image:image>
   </url>
 </urlset>
