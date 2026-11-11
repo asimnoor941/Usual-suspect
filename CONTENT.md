@@ -39,7 +39,7 @@ Quick reference for all editable text content on the site. To update, find the m
 
 ## Marquee Tape (top banner)
 
-> OPEN TONIGHT · KARAOKE 8 PM · HAPPY HOUR 3–6 · UBER EATS LIVE · PARTIES OF 8+ EMAIL US
+> OPEN TONIGHT · KARAOKE 8 PM · HAPPY HOUR OPEN TO CLOSE · UBER EATS LIVE · PARTIES OF 8+ EMAIL US
 
 ---
 
@@ -131,7 +131,7 @@ Quick reference for all editable text content on the site. To update, find the m
 
 **Heading:** Duje Veten Qika. *(love yourself, girl)*
 
-**Body:** Hot-pink walls. Red velvet chairs. A ceiling collaged in vintage Vogue. A disco ball that takes its job seriously. We don't have a walled-off private room — we reserve a section of the house just for your party.
+**Body:** Hot-pink walls. Red velvet chairs. A ceiling collaged in vintage Vogue. A disco ball that takes its job seriously. We don't have a walled-off private room. We reserve a section of the house just for your party.
 
 For birthdays that become stories. Galentine's. Bachelorettes. The occasional divorce party.
 
