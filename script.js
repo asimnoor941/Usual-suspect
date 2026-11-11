@@ -261,3 +261,50 @@
   }
 })();
 
+/* ---- CHRISTMAS THEME · SNOW + STRING LIGHTS ----
+   Runs only when <body class="xmas">. Remove that class to switch it off. */
+(function () {
+  if (!document.body.classList.contains('xmas')) return;
+
+  // String lights, hung just under the pink ticker tape
+  var tape = document.querySelector('.tape');
+  var lights = document.createElement('div');
+  lights.className = 'xmas-lights';
+  lights.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(lights);
+  function placeLights() {
+    if (tape) lights.style.top = tape.offsetHeight + 'px';
+  }
+  placeLights();
+  window.addEventListener('resize', placeLights);
+
+  // Falling snow (skipped for visitors who prefer reduced motion)
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var snow = document.createElement('div');
+  snow.className = 'xmas-snow';
+  snow.setAttribute('aria-hidden', 'true');
+  var count = window.innerWidth < 768 ? 22 : 45;
+  for (var i = 0; i < count; i++) {
+    var f = document.createElement('span');
+    var isCrystal = i % 4 === 0;
+    var size, dur = 9 + Math.random() * 12;
+    if (isCrystal) {
+      size = 12 + Math.random() * 12;
+      f.className = 'xmas-flake' + (i % 8 === 0 ? ' pink' : '');
+      f.textContent = '❄';
+      f.style.fontSize = size + 'px';
+    } else {
+      size = 2 + Math.random() * 4;
+      f.className = 'xmas-flake dot';
+      f.style.width = f.style.height = size + 'px';
+    }
+    f.style.left = (Math.random() * 100) + '%';
+    f.style.opacity = (0.35 + Math.random() * 0.55).toFixed(2);
+    f.style.animationDuration = dur.toFixed(1) + 's';
+    f.style.animationDelay = (-Math.random() * dur).toFixed(1) + 's';
+    f.style.setProperty('--drift', Math.round(Math.random() * 160 - 80) + 'px');
+    f.style.setProperty('--spin', Math.round(Math.random() * 360 - 180) + 'deg');
+    snow.appendChild(f);
+  }
+  document.body.appendChild(snow);
+})();
