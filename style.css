@@ -1493,3 +1493,6 @@ footer {
 .menu-text p { margin: 0 22px 14px; font-size: 15px; line-height: 1.6; color: var(--cream-78); }
 .menu-text > :last-child { margin-bottom: 24px; }
 .menu-text dt { break-after: avoid; }
+
+/* The wide Saturday banner lifts on hover but must not tilt: a 1-degree tilt on a card this wide looks crooked */
+.promo.a:hover { transform: translateY(-4px); }
