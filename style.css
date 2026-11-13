@@ -1496,3 +1496,16 @@ footer {
 
 /* The wide Saturday banner lifts on hover but must not tilt: a 1-degree tilt on a card this wide looks crooked */
 .promo.a:hover { transform: translateY(-4px); }
+
+/* ── LIVE THIS WEEK · five matching cards in week order (Wed to Sun) ── */
+.promo.s { background: linear-gradient(135deg, #12030a, #5a0a2e, #0a0206); }
+@media (min-width: 1100px) {
+  .live-grid { grid-template-columns: repeat(5, 1fr); }
+  .promo .title { font-size: clamp(27px, 2.5vw, 38px); }
+}
+/* Mid-size screens: three cards on the first row, two wider ones on the second */
+@media (min-width: 561px) and (max-width: 1099px) {
+  .live-grid { grid-template-columns: repeat(6, 1fr); }
+  .live-grid .promo { grid-column: span 2; }
+  .live-grid .promo:nth-child(n+4) { grid-column: span 3; aspect-ratio: 6 / 5; }
+}
