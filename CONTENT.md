@@ -39,7 +39,7 @@ Quick reference for all editable text content on the site. To update, find the m
 
 ## Marquee Tape (top banner)
 
-> OPEN TONIGHT · KARAOKE 8 PM · HAPPY HOUR OPEN TO CLOSE · UBER EATS LIVE · PARTIES OF 8+ EMAIL US
+> OPEN TONIGHT · KARAOKE 8 PM · HAPPY HOUR OPEN TO CLOSE · PARTIES OF 8+ EMAIL US
 
 ---
 
