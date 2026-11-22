@@ -1509,3 +1509,41 @@ footer {
   .live-grid .promo { grid-column: span 2; }
   .live-grid .promo:nth-child(n+4) { grid-column: span 3; aspect-ratio: 6 / 5; }
 }
+
+/* ── QUESTIONS PAGE (faq.html) + "more questions" link on the homepage ── */
+.faq-more {
+  display: inline-block; margin-top: 30px;
+  font-family: 'Caveat', cursive; font-weight: 600; font-size: 25px;
+  color: var(--cream); border-bottom: 1px dashed rgba(245,233,213,0.6);
+  transition: color .2s, border-color .2s;
+}
+.faq-more:hover { color: var(--pink); border-bottom-color: var(--pink); }
+.faq-page { background: var(--ink-2); }
+.faq-top {
+  display: flex; align-items: center; justify-content: space-between;
+  max-width: 880px; margin: 0 auto; padding: 22px 32px 0;
+}
+.faq-logo img { width: 56px; height: 56px; border-radius: 50%; box-shadow: 0 0 22px rgba(233,30,140,0.5); }
+.faq-back {
+  font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--cream-78);
+}
+.faq-back:hover { color: var(--pink); }
+.faq-page .faq { padding-top: 50px; border-top: 0; }
+.faq h1 {
+  font-family: 'Archivo Black', sans-serif; text-transform: uppercase;
+  font-size: clamp(36px, 5vw, 64px); line-height: .95; color: var(--cream);
+  margin-bottom: 30px;
+}
+.faq h1 em {
+  font-family: 'Dancing Script', cursive; font-weight: 700; font-style: normal;
+  text-transform: none; color: var(--pink); text-shadow: 0 0 24px var(--pink-glow);
+}
+.faq h2.faq-group {
+  text-transform: none; line-height: 1.1;
+  font-family: 'Caveat', cursive; font-weight: 600; font-size: 30px;
+  color: var(--gold); margin: 46px 0 8px;
+}
+.faq-group + .faq-item { border-top: 1px solid rgba(233,30,140,0.4); }
+.faq-ask { margin-top: 50px; font-size: 16px; color: var(--cream-78); }
+.faq-ask a { color: var(--pink); }
+@media (max-width: 640px) { .faq-top { padding: 18px 18px 0; } }

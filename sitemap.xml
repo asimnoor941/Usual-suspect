@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://usualsuspectsnj.com/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -74,5 +74,11 @@
       <image:loc>https://usualsuspectsnj.com/images/menu-page-2.jpg</image:loc>
       <image:title>The Usual Suspects drinks menu: happy hour, spirits, beer and wine</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://usualsuspectsnj.com/faq.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
